@@ -3,7 +3,7 @@ import axios from "axios";
 const token =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI0NDBjMjQ4OC05ZTVlLTRkODktOTk4ZC04ODMwYWZhMDc5YTYiLCJpYXQiOjE3MTU3NTEyMzUsImV4cCI6MTcxNTc4NzIzNX0.4RLOCwvkruG3-Y5-T4Zp-s_ixgZbQ3CnSB_yArAMLp4";
 
-const baseUrl = "http://192.168.8.198:8082/api";
+const baseUrl = "http://54.164.5.243:8082/api";
 
 export const getCampaignContents = async (data?: string) => {
   try {
