@@ -1,4 +1,4 @@
-name: Deploy React Book App from GitHub to AWS Elastic Beanstalk
+name: Deploy React Vuteem App from GitHub to AWS Elastic Beanstalk
 on:
   # activates the workflow when there is a push on the main branch
   push:
@@ -15,7 +15,7 @@ jobs:
         # checks out your repository under the GitHub workspace so that your workflow can access it
         uses: actions/checkout@v2
 
-      - name: Generate Deployment Package 
+      - name: Generate Deployment Package
         # zip all files except .git
         run: zip -r Vuteem.zip * -x "**.git**"
 
@@ -30,13 +30,13 @@ jobs:
           # replaces '[:\.]+' in the timestamp with '-'
           pattern: '[:\.]+'
           string: "${{ steps.current-time.outputs.time }}"
-          replace-with: '-'
-          flags: 'g'
+          replace-with: "-"
+          flags: "g"
 
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v21
         with:
-         #  input the credentials you used to setup AWS CLI and credentials for the application environment
+          #  input the credentials you used to setup AWS CLI and credentials for the application environment
           aws_access_key: "${{ secrets.ACCESS_KEY }}"
           aws_secret_key: "${{ secrets.SECRET_ACCESS_KEY }}"
           application_name: vuteem
