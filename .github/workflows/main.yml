@@ -40,7 +40,7 @@ jobs:
         uses: einaregilsson/beanstalk-deploy@v21
         with:
           # Input the credentials you used to setup AWS CLI and credentials for the application environment
-          aws-access-key-id: ${{ secrets.aws_access_key }}
+          aws-access-key-id: ${{ secrets.AKIA4U74SA3KUAA3AWHT }}
           aws-secret-access-key: ${{ secrets.aws_secret_key }}
           application_name: vuteem
           environment_name: Vuteem-env
