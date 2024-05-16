@@ -23,11 +23,11 @@ jobs:
         run: zip -r Vuteem.zip * -x "**/.git**"
 
       - name: Get timestamp
-        uses: gerred/actions/current-time@v1.1.3 # Updated to a specific version
+        uses: gerred/actions/current-time@master # Reverting to the available version
         id: current-time
 
       - name: Run string replace
-        uses: frabert/replace-string-action@v1.0.0 # Updated to a specific version
+        uses: frabert/replace-string-action@master # Reverting to the available version
         id: format-time
         with:
           # Replaces '[:\.]+' in the timestamp with '-'
