@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOLO - New Keds Promotion!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .header {
+      background-color: #ba0761;
+      color: #fff;
+      height: 60px;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .header h1 {
+      font-size: 2em;
+      margin-top: -10px;
+    }
+
+    .header p {
+      font-size: 1em;
+      margin-top: -5px;
+    }
+
+    .promotions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+      margin-top: 10px; /* Adjusted to make space for the fixed header */
+    }
+
+    .promotion {
+      width: 35%;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .promotion img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .promotion h3 {
+      font-size: 1.5em;
+      margin-bottom: 5px;
+    }
+
+    .promotion p {
+      margin-bottom: 15px;
+    }
+
+    .promotion button {
+      background-color: #f7337f;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .promotion button:hover {
+      background-color: #ff5599;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      background-color: #ba0761;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      height: 60px;
+      overflow-y: scroll; /* Make the footer scrollable */
+      z-index: 1000;
+    }
+
+    .offer-paragraph {
+      background-color: #fff;
+      padding: 20px;
+      margin-top: 100px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .offer-paragraph p {
+      font-size: 16px;
+      line-height: 1.6;
+      color:  green;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>LOLO</h1>
+    <p>Your One-Stop Shop for Stylish Keds</p>
+  </header>
+  <div class="offer-paragraph">
+    <p>Explore our exclusive offer today and elevate your style with our latest collection of premium Keds! From vibrant spring hues to classic summer essentials, we have something for every fashion enthusiast. Enjoy irresistible discounts on selected styles and step into the season with confidence. Don't miss out on this limited-time offer – shop now and make a statement with LOL Brand Keds!</p>
+  </div>
+  <section class="promotions">
+    <article class="promotion">
+      <img src="https://via.placeholder.com/400"  alt="Keds Demo Image 1">
+      <h3>Spring Collection</h3>
+      <p>Get 20% off all pastel-colored Keds!</p>
+      <button>Shop Now</button>
+    </article>
+
+    <article class="promotion">
+      <img src="https://via.placeholder.com/400"  alt="Keds Demo Image 2">
+      <h3>Summer Sale</h3>
+      <p>Buy one pair, get one 50% off on all canvas Keds!</p>
+      <button>Shop Now</button>
+    </article>
+
+    <article class="promotion">
+      <img src="https://via.placeholder.com/400" alt="Keds Demo Image 3">
+      <h3>Back to School Deals</h3>
+      <p>Special discounts for students on classic Keds styles!</p>
+      <button>Shop Now</button>
+    </article>
+
+    <article class="promotion">
+      <img src="https://via.placeholder.com/400" alt="Keds Demo Image 4">
+      <h3>Fall Fashion Must-Haves</h3>
+      <p>Upgrade your fall wardrobe with trendy platform Keds!</p>
+      <button>Shop Now</button>
+    </article>
+  </section>
+  <footer class="footer">
+    <p>&copy; 2024 LOLO. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/">Facebook</a>
+      <a href="https://www.instagram.com/">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
